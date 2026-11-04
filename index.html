@@ -1,21 +1,22 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#06152b">
   <meta name="description" content="Discover software solutions for work, productivity and digital security at CoreSoftStore.">
   <title>CoreSoftStore — Premium Software. Made Simple.</title>
+  <script>document.documentElement.classList.add("js");</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <header class="header">
     <a class="logo" href="#"><span class="logo-icon">C</span> CoreSoft<span>Store</span></a>
-    <nav>
+    <nav aria-label="Main navigation">
       <a href="#categories">Categories</a>
       <a href="#products">Products</a>
       <a href="#about">About us</a>
@@ -24,71 +25,120 @@
     <a class="header-btn" href="#products">Explore Store <span>↗</span></a>
   </header>
 
-  <main>
+  <main id="main">
     <section class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
       <div class="hero-content">
-        <div class="eyebrow"><span></span> YOUR DIGITAL SOFTWARE STORE</div>
-        <h1>Premium software.<br><span>Made simple.</span></h1>
-        <p>Discover software solutions for productivity, security and everyday digital life — all in one place.</p>
-        <div class="hero-actions">
+        <div class="eyebrow enter" style="--d:.05s"><span></span> DIGITAL SOFTWARE LICENCES</div>
+        <h1 class="enter" style="--d:.15s">Premium software.<br><span>Made simple.</span></h1>
+        <p class="enter" style="--d:.28s">Discover digital software licences for productivity, security and everyday digital life — all in one place.</p>
+        <div class="hero-actions enter" style="--d:.4s">
           <a class="primary-btn" href="#products">Explore products <span>→</span></a>
           <a class="secondary-btn" href="#categories">Browse categories</a>
         </div>
-        <div class="hero-note"><span>✦</span> Simple shopping. Digital convenience.</div>
+        <div class="hero-note enter" style="--d:.52s"><span>✦</span> Simple shopping. Digital convenience.</div>
       </div>
-      <div class="hero-visual">
+
+      <div class="hero-visual enter-visual" aria-hidden="true">
         <div class="glow"></div>
-        <div class="software-card card-back"><span>✦</span><small>PRODUCTIVITY</small><strong>Work smarter.</strong></div>
-        <div class="software-card card-front">
-          <div class="window-dots"><i></i><i></i><i></i></div>
-          <div class="shield">✧</div>
-          <small>YOUR DIGITAL WORLD</small>
-          <h3>Everything<br>in one place.</h3>
-          <div class="card-line"></div>
-          <div class="card-footer"><span>CORESOFTSTORE</span><span>01 / 04</span></div>
+        <div class="ring"></div>
+
+        <div class="box box-back">
+          <div class="box-spine"></div>
+          <div class="box-face">
+            <span class="box-star">✦</span>
+            <small>PRODUCTIVITY</small>
+            <strong>Work smarter.</strong>
+          </div>
+        </div>
+
+        <div class="box box-front">
+          <div class="box-spine"></div>
+          <div class="box-face">
+            <div class="window-dots"><i></i><i></i><i></i></div>
+            <div class="app-ui">
+              <div class="app-side"><i></i><i></i><i></i><i></i></div>
+              <div class="app-main">
+                <div class="app-bar"></div>
+                <div class="app-tiles"><i></i><i></i><i></i></div>
+                <div class="app-line"></div>
+                <div class="app-line short"></div>
+              </div>
+            </div>
+            <small>YOUR DIGITAL WORLD</small>
+            <h3>Everything<br>in one place.</h3>
+            <div class="card-footer"><span>CORESOFTSTORE</span><span>01 / 04</span></div>
+          </div>
+        </div>
+
+        <div class="chip chip-key">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="15" r="4"/><path d="m11 12 9-9M16 7l3 3M14 9l2 2"/></svg>
+          <div><small>LICENCE KEY</small><b>XXXXX-XXXXX-XXXXX</b></div>
+        </div>
+        <div class="chip chip-shield">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 5 6v5c0 4.5 3 8 7 10 4-2 7-5.5 7-10V6l-7-3Z"/><path d="m9 12 2 2 4-4"/></svg>
         </div>
         <div class="floating-badge">DIGITAL <b>✦</b> STORE</div>
       </div>
     </section>
 
-    <section class="trust-strip">
+    <section class="trust-strip" aria-label="What we offer">
       <span>SOFTWARE FOR EVERYDAY LIFE</span>
       <span>PRODUCTIVITY</span><span>SECURITY</span><span>UTILITIES</span>
     </section>
 
     <section class="section" id="categories">
-      <div class="section-heading">
+      <div class="section-heading" data-reveal>
         <div><div class="eyebrow">EXPLORE BY CATEGORY</div><h2>Find what you need.</h2></div>
         <p>Explore our software collections<br>and discover the right tools for you.</p>
       </div>
       <div class="category-grid">
-        <a class="category" href="#products"><span class="category-icon">▣</span><h3>Operating Systems</h3><p>Explore essential system software.</p><span class="category-arrow">↗</span></a>
-        <a class="category" href="#products"><span class="category-icon">▤</span><h3>Office & Productivity</h3><p>Tools to help you get more done.</p><span class="category-arrow">↗</span></a>
-        <a class="category" href="#products"><span class="category-icon">⬡</span><h3>Security & Antivirus</h3><p>Discover digital security solutions.</p><span class="category-arrow">↗</span></a>
-        <a class="category" href="#products"><span class="category-icon">⌘</span><h3>VPN & Utilities</h3><p>Useful tools for your digital life.</p><span class="category-arrow">↗</span></a>
+        <a class="category" data-reveal style="--i:0" href="#products">
+          <span class="category-icon"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></span>
+          <h3>Operating Systems</h3><p>Explore essential system software.</p><span class="category-arrow">↗</span>
+        </a>
+        <a class="category" data-reveal style="--i:1" href="#products">
+          <span class="category-icon"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5Z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg></span>
+          <h3>Office &amp; Productivity</h3><p>Tools to help you get more done.</p><span class="category-arrow">↗</span>
+        </a>
+        <a class="category" data-reveal style="--i:2" href="#products">
+          <span class="category-icon"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 5 6v5c0 4.5 3 8 7 10 4-2 7-5.5 7-10V6l-7-3Z"/></svg></span>
+          <h3>Security &amp; Antivirus</h3><p>Discover digital security solutions.</p><span class="category-arrow">↗</span>
+        </a>
+        <a class="category" data-reveal style="--i:3" href="#products">
+          <span class="category-icon"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.2 3 14.8 0 18M12 3c-3 3.2-3 14.8 0 18"/></svg></span>
+          <h3>VPN &amp; Utilities</h3><p>Useful tools for your digital life.</p><span class="category-arrow">↗</span>
+        </a>
       </div>
     </section>
 
     <section class="products section" id="products">
-      <div class="section-heading">
+      <div class="section-heading" data-reveal>
         <div><div class="eyebrow">OUR COLLECTION</div><h2>Featured products.</h2></div>
-        <span class="coming">PRODUCTS COMING SOON</span>
+        <span class="coming"><i></i>PRODUCTS COMING SOON</span>
       </div>
-      <div class="empty-products">
-        <div class="empty-icon">✧</div>
+      <div class="empty-products" data-reveal>
+        <div class="ghost-row" aria-hidden="true">
+          <div class="ghost"><div class="ghost-box"></div><i></i><i class="s"></i></div>
+          <div class="ghost"><div class="ghost-box"></div><i></i><i class="s"></i></div>
+          <div class="ghost"><div class="ghost-box"></div><i></i><i class="s"></i></div>
+        </div>
+        <div class="empty-icon" aria-hidden="true">✧</div>
         <h3>Your next essential tool is here.</h3>
         <p>We're preparing our software collection. Check back soon.</p>
       </div>
     </section>
 
     <section class="about section" id="about">
-      <div class="about-mark">C<span>.</span></div>
-      <div><div class="eyebrow">THE CORESOFTSTORE DIFFERENCE</div><h2>A simpler way to<br>shop for software.</h2><p>We bring useful digital software solutions together in one clear, convenient shopping experience.</p></div>
+      <div class="about-mark" data-reveal>C<span>.</span></div>
+      <div data-reveal style="--i:1"><div class="eyebrow">THE CORESOFTSTORE DIFFERENCE</div><h2>A simpler way to<br>shop for software.</h2><p>We bring useful digital software solutions together in one clear, convenient shopping experience.</p></div>
     </section>
 
     <section class="support section" id="support">
-      <div><div class="eyebrow">NEED A HAND?</div><h2>We're here to help.</h2><p>Have a question about a product or an order? Get in touch with our support team.</p></div>
-      <a class="primary-btn" href="mailto:support@coresoftstore.com">Contact support ↗</a>
+      <div class="support-inner" data-reveal>
+        <div><div class="eyebrow">NEED A HAND?</div><h2>We're here to help.</h2><p>Have a question about a product or an order? Get in touch with our support team.</p></div>
+        <a class="primary-btn" href="mailto:support@coresoftstore.com">Contact support ↗</a>
+      </div>
     </section>
   </main>
 
